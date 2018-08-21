@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title>Countries of the World</title>
+  <link rel='stylesheet' href='/client/main.css'>
+</head>
+<body>
+  <header>
+    <h1>Countries of the World</h1>
+    <div class="form">
+      <form id='loginForm' class='form-login'>
+        <input type='text' name='username' placeholder='Username'>
+        <input type='password' name='password' placeholder='Password'>
+        <button>Login</button>
+      </form>
+      <form id='signUpForm' class='form-sign-up'>
+        <input type='text' name='username' placeholder='Create Username'>
+        <input type='password' name='password' placeholder='Create Password'>
+        <button>Sign Up</button>
+      </form>
+    </div>
+  </header>
+  <main>
+    <div class='game'>
+      <form id='gameForm' class='game-form'>
+        <input id='gameInputId' type='text' name='name' placeholder='Enter country' autofocus>
+        <button>Submit</button>
+      </form>
+      <p id='gameMessage' class='game-message'></p>
+      <aside class='game-score'>
+        <h3>Score</h3>
+        <p class='game-score-value'><span id='scoreText'></span>/197</p>
+        <button id='reset'>Reset</button>
+      </aside>
+    </div>
+    <div class='countries'>
+      <div class='countries-list'>
+        <h3>List of Countries</h3>
+        <ol id='countriesList'>
+          
+        </ol>
+      </div>
+      <img class='countries-map' src='http://7bit.co/wp-content/uploads/2018/05/world-map-political-without-names-best-gb3vxuc-15-world-map-no-names-roaaar-me-and-without-madriver-of-world-map-political-without-names.png' alt='World Map'>
+    </div>
+  </main>
+  
+  <script src='/client/logic.js'></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+* {
+  font-family: sans-serif;
+  font-weight: 100;
+  outline: none;
+}
+
+body {
+  margin-top: 0;
+}
+
+h1, h3 {
+  margin: 0;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 25rem 1fr;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #dddbdb;
+}
+
+.form {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form > form {
+  padding: 1rem;
+}
+
+.form > form:hover {
+  background: #d0cbcb;
+}
+
+.form-login {
+  border-right: 1px solid #dddbdb;
+}
+
+.form-sign-up{
+  
+}
+
+main {
+  display: grid;
+  grid-template-rows: 10rem 5fr;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.game-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20rem;
+  height: 5rem;
+  background: #d4d0d0;
+  border: 3px solid white;
+  margin: 0;
+}
+
+.countries {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.countries-map {
+  width: 40rem;
+}
