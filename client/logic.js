@@ -55,6 +55,7 @@ function userPost(url, data){
 function post(url, data){
   const xhr = new XMLHttpRequest();
   xhr.open('post', url, true);
+  xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
   xhr.onload = function(){
     if(xhr.status === 200){
       if(this.response !== 'Validation error'){
@@ -75,7 +76,6 @@ function post(url, data){
       message.style.border = '3px solid red'; 
     }
   }
-  xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 
   xhr.send(data);
 }
